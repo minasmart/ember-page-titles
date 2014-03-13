@@ -46,7 +46,7 @@ The magic really happens in the route's `buildTitle` method. It looks at the
 ```
 "%@ | %@".fmt(pageTitle, App.NAME);
 ```
-If no pageTitle attribute is available, App.NAME is set as the page title.
+If no `pageTitle` attribute is available, `App.NAME` is set as the page title.
 
 If you need any sort of funky behaviour override `Ember.Route.buildTitle`.
 
