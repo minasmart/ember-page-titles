@@ -50,8 +50,4 @@ If no pageTitle attribute is available, App.NAME is set as the page title.
 
 If you need any sort of funky behaviour override `Ember.Route.buildTitle`.
 
-Really guys, this little plugin is so simple you should probably just modify it
-to suit your needs. It worked pretty well for my use-case. Maybe it will work
-for yours?
-
 Kick ass!
