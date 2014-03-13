@@ -7,7 +7,7 @@ keep that sort of functionality with Ember? Well here's one really simple way to
 do just that. It's really simple. Don't use this if it doesn't suit you needs,
 but remember: Web pages have titles. It's totally a thing.
 
-Extracted from houseofetiquette.com
+Extracted from [houseofetiquette.com](https://houseofetiquette.com).
 
 Usage
 =====
