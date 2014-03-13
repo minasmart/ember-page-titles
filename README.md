@@ -14,15 +14,18 @@ Usage
 
 1. include `ember-page-titles.js` in your project.
 2. Mix it in to Ember.route:
+
    ```
    Ember.Route.reopen(Ember.PageTitles);
    ```
 3. Give your app a name.
+
    ```
    App.NAME = "My Super Sexy Website";
    ```
 4. Set a page title somewhere in your route. `afterModel` is a good place to do
    this.
+
    ```
    MyRoute = Ember.Route.extend({
 
