@@ -1,6 +1,6 @@
 {
   "name": "ember-page-titles",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./ember-page-titles.js",
   "dependencies": {
     "ember": ">=1.0.0"
