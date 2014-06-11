@@ -1,8 +1,6 @@
-(function () {
-
 var get = Ember.get, $ = Ember.$;
 
-Ember.PageTitles = Ember.Mixin.create({
+var PageTitles = Ember.Mixin.create({
 
   buildTitle: function(){
     var suffix, title, format;
@@ -39,4 +37,4 @@ Ember.PageTitles = Ember.Mixin.create({
 
 });
 
-})();
+export default PageTitles
