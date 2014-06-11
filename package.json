@@ -1,0 +1,23 @@
+{
+  "name": "ember-page-titles",
+  "version": "0.0.0",
+  "description": "Ember Page Titles =================",
+  "main": "ember-page-titles.js",
+  "scripts": {
+    "build": "scripts/build.sh",
+    "clean": "scripts/clean.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/matthewsmart/ember-page-titles.git"
+  },
+  "author": "M. Smart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewsmart/ember-page-titles/issues"
+  },
+  "homepage": "https://github.com/matthewsmart/ember-page-titles",
+  "devDependencies": {
+    "es6-module-transpiler": "~0.4.0"
+  }
+}
