@@ -5,13 +5,14 @@ YUI.add("ember/page-titles", function(Y, NAME, __imports__, __exports__) {
     var PageTitles = Ember.Mixin.create({
 
       buildTitle: function(){
-        var suffix, title, format;
+        var env = window.ENV, suffix, title, format;
+
 
         // Page title suffix, or default title
-        suffix = App.NAME;
+        suffix = env.NAME;
 
         // Default title format is "page-title | App.NAME"
-        format = Ember.isNone(App.TITLE_FORMAT) ? "%@ | %@" : App.TITLE_FORMAT;
+        format = Ember.isNone(env.TITLE_FORMAT) ? "%@ | %@" : env.TITLE_FORMAT;
 
         // pageTitle attribute from the route
         title = get(this, 'pageTitle');
@@ -26,7 +27,7 @@ YUI.add("ember/page-titles", function(Y, NAME, __imports__, __exports__) {
       },
 
       setPageTitle: function() {
-        title = this.buildTitle();
+        var title = this.buildTitle();
 
         $('title').html(title);
       },
@@ -39,6 +40,6 @@ YUI.add("ember/page-titles", function(Y, NAME, __imports__, __exports__) {
 
     });
 
-    __exports__["default"] = PageTitles
+    __exports__["default"] = PageTitles;
     return __exports__;
 }, "@VERSION@", {"es":true,"requires":[]});
