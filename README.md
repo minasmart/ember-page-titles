@@ -18,10 +18,11 @@ Usage
    ```
    Ember.Route.reopen(Ember.PageTitles);
    ```
-3. Give your app a name.
+3. Create a ENV object attached to the window. Use it for your configuration
 
    ```
-   App.NAME = "My Super Sexy Website";
+   window.ENV = {};
+   window.ENV.NAME = "My Super Sexy Website";
    ```
 4. Set a page title somewhere in your route. `afterModel` is a good place to do
    this.
@@ -45,11 +46,11 @@ Advanced Usage
 ==============
 
 The magic really happens in the route's `buildTitle` method. It looks at the
-`App.NAME`, and `App.TITLE_FORMAT` keys. The default format is defined as
+`ENV.NAME`, and `ENV.TITLE_FORMAT` keys. The default format is defined as
 ```
 "%@ | %@".fmt(pageTitle, App.NAME);
 ```
-If no `pageTitle` attribute is available, `App.NAME` is set as the page title.
+If no `pageTitle` attribute is available, `ENV.NAME` is set as the page title.
 
 If you need any sort of funky behaviour override `Ember.Route.buildTitle`.
 
